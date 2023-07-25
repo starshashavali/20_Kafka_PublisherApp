@@ -17,7 +17,7 @@ public class OrderService {
 		// publish msg to kafka topic
 		kafkaTemplate.send(AppConstants.TOPIC, order);
 
-		return "Msg Published To Kafka Topic";
+		return AppConstants.MZG;
 	}
 }
 

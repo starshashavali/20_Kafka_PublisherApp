@@ -16,8 +16,8 @@ public class OrderRestController {
 
 	@PostMapping("/order")
 	public String createOrder(@RequestBody Order order) {
-		String msg = service.addMsg(order);
-		return msg;
+		return service.addMsg(order);
+		 
 	}
 
 }
